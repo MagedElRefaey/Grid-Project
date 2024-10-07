@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: rgb(248, 245, 240);
+    padding: 20px;
+}
+.Container{
+    display: grid;
+    grid-template-areas: ".David" ".Jonathan" ".Kira"
+                          ".Jeantette" ".Patrick"
+                         
+}
+.David{
+    grid-area:David;
+    /* height: 100%;
+    width: 100%;
+    border: 3px solid black; */
+    padding: 20px 0;
+    background-color: #9c00f7e5;
+}
+.Jonathan{
+    grid-area:Jonathan;
+    /* height: 100%;
+    width: 100%;
+    border: 3px solid black; */
+    padding: 20px 0;
+    background-color: #9c00f7e5;
+}
+.Jeantette{
+    grid-area:Jeantette;
+    /* height: 100%;
+    width: 100%;
+    border: 3px solid black; */
+    padding: 20px 0;
+    background-color: #9c00f7e5;
+}
+.Patrick{
+    grid-area:Patrick;
+    /* height: 100%;
+    width: 100%;
+    border: 3px solid black; */
+    padding: 20px 0;
+    background-color: #9c00f7e5;
+}
+.Kira{
+    grid-area:Kira;
+    /* height: 100%;
+    width: 100%;
+    border: 3px solid black; */
+    padding: 20px 0;
+    background-color: #9c00f7e5;
+}

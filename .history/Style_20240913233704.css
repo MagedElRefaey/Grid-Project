@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: rgb(248, 245, 240);
+    padding: 20px;
+}
+.Container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: auto auto;
+    grid-template-areas: "David  Jonathan Jonathan Kira"
+                        "Jeanette Patrick Patrick Kira";
+    gap: 20px;
+    
+}
+.Card{
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+.Card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.David{
+    grid-area:David;
+    background-color: #9c00f7e5;
+    width: 600px;
+    
+    
+}
+.Jonathan{
+    grid-area:Jonathan;
+    background-color: #1d1c1bd5;
+   
+}
+.Jeanette{
+    grid-area:Jeanette;
+    background-color: #968c9ee5;
+}
+.Patrick{
+    grid-area:Patrick;
+    background-color: #11101de5;
+}
+.Kira{
+    grid-area:Kira;
+    background-color: #b39fb9e5;
+}
+h3{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    
+}
+blockquote {
+font-style: times;
+font-size:18px;
+color: white;
+margin: 10px 0;
+}
+
+@media  (max-width<=780px){
+    .Container{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-areas: 
+        "David David"
+        "Jonathan Jonathan"
+        "Jeanette Jeanette"
+        "Patrick" "Patrick"
+        "Kira Kira";        
+    }
+}
+@media  (max-width:30px){
+    .Container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "David"
+        "Jonathan"
+        "Jeanette"
+        "Patrick"
+        "Kira";        
+    }
+
+}
+
+

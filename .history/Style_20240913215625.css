@@ -1,0 +1,49 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body{
+    background-color: rgb(248, 245, 240);
+    padding: 20px;
+}
+.Container-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+
+.Container {
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.David {
+    background-color: #6227a6;
+    grid-column: span 2;
+}
+
+.Jonathan {
+    background-color: #313a46;
+}
+
+.Jeantette {
+    background-color: #ffffff;
+    color: #333;
+}
+
+.Patrick {
+    background-color: #000;
+}
+
+.Kira {
+    background-color: #f5f5f7;
+    color: #333;
+    grid-column: span 2;
+}
